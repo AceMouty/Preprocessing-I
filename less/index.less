@@ -58,19 +58,36 @@ html, body {
 }
 
 // Start's here
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap');
 
 // Variables & Mix-in's
 
 @darkGray: #555;
+@headerFont: 'Josefin Sans', sans-serif;
+@textFont: 'Raleway', sans-serif;
+
+.flexWrap(){
+	display: flex;
+	flex-wrap: wrap;
+};
+
+.secondHeader(){
+	font-size: 3rem;
+	font-family: @headerFont;
+	font-weight: bold;
+};
 
 // General
 html{
 	font-size: 62.5%;
 }
 .container{
-	width: 900px;
+	width: 90rem;
 	margin: 0 auto;
+
+	@media (max-width: 500px){
+		width: 450px;
+	}
 }
 
 a {
@@ -82,8 +99,7 @@ a {
 header {
 
 	// border: 2px solid red;
-	display: flex;
-	flex-wrap: wrap;
+	.flexWrap();
 	
 	// Navigation
 	.nav-container{
@@ -100,6 +116,10 @@ header {
 			padding: 1.5rem 0;
 			width: 30%;
 			font-weight: bold;
+
+			@media (max-width: 500px){
+				width: 100%;
+			}
 
 			a{
 				color: black;
@@ -130,16 +150,23 @@ header {
 			
 			h1{
 				font-size: 5rem;
+				font-family: @headerFont;
+
+				@media (max-width: 500px){
+					font-size: 3rem;
+				}
 			}
 
 			.headline-text{
 				font-size: 2.5rem;
 				margin: 1.5rem 0;
+				font-family: @textFont;
 			}
 
 			p{
 				font-size: 2rem;
 				margin: 1.5rem 0;
+				font-family: @textFont;
 			}
 
 			a{
@@ -153,8 +180,7 @@ header {
 				font-weight: bold;
 
 				&:hover{
-					color: black;
-					background-color: white;
+					background-color: #0077B5;
 				}
 			}
 
@@ -165,8 +191,7 @@ header {
 
 .skills{
 	// border: 2px solid red;
-	display: flex;
-	flex-wrap: wrap;
+	.flexWrap();
 	justify-content: space-between;
 	margin-top: 2rem;
 
@@ -174,9 +199,12 @@ header {
 		width: 45%;
 		
 		h2{
-			font-size: 3rem;
-			font-weight: bold;
+			.secondHeader();
 			margin-bottom: 1rem;
+
+			@media (max-width: 500px){
+				font-size: 2rem;
+			}
 		}
 	}
 	
@@ -185,6 +213,7 @@ header {
 		p{
 			font-size: 1.8rem;
 			line-height: 1.3;
+			font-family: @textFont;
 		}
 
 	}
@@ -196,6 +225,7 @@ header {
 
 			li{
 				font-size: 1.6rem;
+				font-family: @textFont;
 				border-bottom: .2rem solid lightgray;
 				padding: 1rem;
 				font-weight: bold; 
@@ -215,16 +245,24 @@ header {
 		margin-bottom: 4rem;
 
 		h2{
-			font-size: 3rem;
-			font-weight: bold;
+			.secondHeader();
+
+			@media (max-width: 500px){
+				font-size: 2rem;
+			}
 		}
 
 		table{
 			border-top: 2px solid lightgrey;
 			border-bottom: 2px solid lightgray;
 			font-size: 2rem;
+			font-family: @textFont;
 			width: 100%;
 			text-align: left;
+
+			@media (max-width: 500px){
+				font-size: 1.5rem;
+			}
 
 			tr{
 				border-top: 2px solid lightgray;
@@ -251,6 +289,11 @@ footer{
 		padding: 3rem;
 		background: gray;
 		color: white;
+
+		@media (max-width: 500px){
+			font-size: 1.5rem;
+		}
+
 	}
 }
 
