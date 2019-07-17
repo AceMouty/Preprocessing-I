@@ -165,7 +165,6 @@ header .nav-container nav a {
   color: black;
 }
 header .showcase {
-  border: 2px solid red;
   width: 100%;
   padding: 4rem 2rem;
   background: #E9ECEF;
@@ -181,11 +180,12 @@ header .showcase .headline h1 {
   font-size: 5rem;
 }
 header .showcase .headline .headline-text {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin: 1.5rem 0;
 }
 header .showcase .headline p {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  margin: 1.5rem 0;
 }
 header .showcase .headline a {
   display: inline-block;
@@ -200,4 +200,70 @@ header .showcase .headline a {
 header .showcase .headline a:hover {
   color: black;
   background-color: white;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.skills .box-top {
+  width: 45%;
+}
+.skills .box-top h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.skills .about p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+.skills .skills-list ul {
+  border: 2px solid lightgray;
+}
+.skills .skills-list ul li {
+  font-size: 1.6rem;
+  border-bottom: 0.2rem solid lightgray;
+  padding: 1rem;
+  font-weight: bold;
+}
+.skills .skills-list ul li:last-child {
+  border-bottom: none;
+}
+.skills .work-history {
+  margin-top: 3rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.skills .work-history h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.skills .work-history table {
+  border-top: 2px solid lightgrey;
+  border-bottom: 2px solid lightgray;
+  font-size: 2rem;
+  width: 100%;
+  text-align: left;
+}
+.skills .work-history table tr {
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+}
+.skills .work-history table tr th,
+.skills .work-history table tr td {
+  font-weight: bold;
+  padding: 0.8rem;
+}
+.skills .work-history table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+footer p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 3rem;
+  background: gray;
+  color: white;
 }
