@@ -57,3 +57,103 @@ html, body {
     height: 100%;
 }
 
+// Start's here
+
+// General
+html{
+	font-size: 62.5%;
+}
+.container{
+	width: 900px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+// Header
+
+header {
+
+	// border: 2px solid red;
+	display: flex;
+	flex-wrap: wrap;
+	
+	// Navigation
+	.nav-container{
+		// border: 2px solid blue;
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		font-size: 1.6rem;
+
+		nav{
+			// border: 2px solid green;
+			display: flex;
+			justify-content: space-between;
+			padding: 1.5rem 0;
+			width: 30%;
+			font-weight: bold;
+
+			a{
+				color: black;
+			}
+		}
+
+	}
+
+	.showcase{
+
+		border: 2px solid red;
+		width: 100%;
+		padding: 4rem 2rem;
+		background: #E9ECEF;
+
+		.image-container{
+			width: 35%;
+			margin-bottom: 1rem;
+
+			img{
+				max-width: 100%;
+			}
+
+		}
+
+		.headline{
+			// border: 2px solid green;
+			
+			h1{
+				font-size: 5rem;
+			}
+
+			.headline-text{
+				font-size: 1.8rem;
+				margin: 1.5rem 0;
+			}
+
+			p{
+				font-size: 1.6rem;
+			}
+
+			a{
+				display: inline-block;
+				margin: 1.5rem 0;
+				padding: 1.5rem;
+				border-radius: .8rem;
+				font-size: 1.6rem;
+				color: white;
+				background-color: #555;
+				font-weight: bold;
+
+				&:hover{
+					color: black;
+					background-color: white;
+				}
+			}
+
+		}
+
+	}
+}
+
